@@ -75,9 +75,7 @@ df.groupby('Company')['Sales'].std()
 ```
 <img width="160" alt="Screenshot 2025-05-06 at 7 47 30 PM" src="https://github.com/user-attachments/assets/2cc35fcc-1802-4d4c-99c7-0f32eadd33f1" />
 
-```
-df.groupby('Company')['Sales'].min()
-```
+
 ```
 import pandas as pd
 data = {
