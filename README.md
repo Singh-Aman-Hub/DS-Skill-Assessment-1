@@ -88,6 +88,8 @@ df = pd.DataFrame(data)
 print(df.head(3))
 
 ```
+
+
 <img width="150" alt="Screenshot 2025-05-06 at 7 47 43 PM" src="https://github.com/user-attachments/assets/56b83f89-67fc-410b-8aca-2c923144cd08" />
 
 ```
@@ -102,6 +104,7 @@ df = pd. DataFrame(data)
 print(df.tail(3))
 ```
 <img width="186" alt="Screenshot 2025-05-06 at 7 48 06 PM" src="https://github.com/user-attachments/assets/ee192545-d6a8-425c-b9bb-2932ecd33069" />
+
 ```
 
 import pandas as pd;
