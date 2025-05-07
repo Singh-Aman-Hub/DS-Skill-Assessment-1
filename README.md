@@ -103,6 +103,8 @@ data = {
 df = pd. DataFrame(data)
 print(df.tail(3))
 ```
+
+
 <img width="186" alt="Screenshot 2025-05-06 at 7 48 06 PM" src="https://github.com/user-attachments/assets/ee192545-d6a8-425c-b9bb-2932ecd33069" />
 
 ```
@@ -118,6 +120,8 @@ df = pd.DataFrame(data)
 df.info()
 
 ```
+
+
 <img width="162" alt="Screenshot 2025-05-06 at 7 48 28 PM" src="https://github.com/user-attachments/assets/a85e37be-641c-4601-b3c0-4ee9fa9104fa" />
 
 ```
@@ -130,7 +134,11 @@ data = {
 df = pd.DataFrame (data)
 print(df.describe())
 ```
+
+
 <img width="210" alt="Screenshot 2025-05-06 at 7 48 40 PM" src="https://github.com/user-attachments/assets/5cc85c96-0f0c-4d6a-9454-15faf278db2e" />
+
+
 
 ```
 data = {'name': ['Alice', 'Bob', 'Charlie', 'Dave', 'Emily', 'Frank'],
@@ -142,7 +150,12 @@ grouped = df.groupby('gender')['salary'].mean()
 print(grouped)
 
 ```
+
+
+
 <img width="189" alt="Screenshot 2025-05-06 at 7 48 57 PM" src="https://github.com/user-attachments/assets/f6cc4443-c24c-4276-b584-92d7661c9c67" />
+
+
 
 
 ```
@@ -155,7 +168,13 @@ grouped = df.groupby('gender').count()
 print (grouped)
 
 ```
+
+
+
 <img width="182" alt="Screenshot 2025-05-06 at 7 49 09 PM" src="https://github.com/user-attachments/assets/c59cc623-8755-456b-beb2-8fe9de70a6e8" />
+
+
+
 ```
 import pandas as pd
 # Create a sample DataFrame with missing values
@@ -166,14 +185,23 @@ df = pd.DataFrame (data)
 df
 
 ```
+
+
 <img width="215" alt="Screenshot 2025-05-06 at 7 49 29 PM" src="https://github.com/user-attachments/assets/bf43f74d-a236-4419-9fcf-313b3b31f676" />
+
+
 
 ```
 df_cleaned = df.dropna(subset=['Salary'])
 print(df_cleaned)
 
 ```
+
+
+
 <img width="152" alt="Screenshot 2025-05-06 at 7 49 38 PM" src="https://github.com/user-attachments/assets/b5b2e224-eef0-4fef-95fe-2d150593d5a4" />
+
+
 
 ```
 # Remove rows with all missing values
@@ -181,13 +209,21 @@ df_cleaned_all = df.dropna(how='all')
 print(df_cleaned_all)
 
 ```
+
+
 <img width="161" alt="Screenshot 2025-05-06 at 7 50 10 PM" src="https://github.com/user-attachments/assets/494dd9aa-156f-405f-b5a5-78cdcbf344e7" />
+
+
 ```
 df_cleaned_any = df.dropna (how='any')
 print(df_cleaned_any)
 
 ```
+
+
 <img width="142" alt="Screenshot 2025-05-06 at 7 50 29 PM" src="https://github.com/user-attachments/assets/a5f8b28e-9c5f-4324-aba1-bcdc921a0c29" />
+
+
 
 ```
 data = {'Name': ['Alice', 'Bob', 'Charlie', 'Dave', 'Dave', 'Eve', 'Bob'],
@@ -197,7 +233,11 @@ df = pd.DataFrame(data)
 df.duplicated()
 
 ```
+
+
 <img width="81" alt="Screenshot 2025-05-06 at 7 50 47 PM" src="https://github.com/user-attachments/assets/8c3ff3ba-d2dc-4c30-88f6-b812740150d9" />
+
+
 
 ```
 data = {'Name': ['Alice', 'Bob', 'Charlie', 'Dave', 'Eve'],
@@ -209,7 +249,12 @@ df_filled = df.fillna(0)
 print(df_filled)
 
 ```
+
+
+
 <img width="159" alt="Screenshot 2025-05-06 at 7 51 03 PM" src="https://github.com/user-attachments/assets/8cdf82b6-3b14-4ee4-b1ad-7977a652b5d6" />
+
+
 
 ```
 data = {'name': ['Alice', 'Bob', 'Charlie', 'Dave'],
@@ -220,4 +265,6 @@ df = pd. DataFrame (data)
 df_filtered = df[(df ['gender']== 'M') & (df['height'] >1.7)]
 df_filtered
 ```
+
+
 <img width="200" alt="Screenshot 2025-05-06 at 7 51 15 PM" src="https://github.com/user-attachments/assets/51f1fc07-78d1-4e57-8009-61169cd107f5" />
